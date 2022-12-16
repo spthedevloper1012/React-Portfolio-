@@ -4,6 +4,9 @@
   --primary-white: #fff;
   --primary-orange:#f9ab00;
   --primary-dark:rgba(255,255,255,0);
+  --primary-btn-dark:#000;
+  --primary-red:#ef4035;
+  --primary-hover-red:#f33501;
 }
 body {
   font-family: "Chivo Mono", monospace;
@@ -15,7 +18,9 @@ body {
 }
 
 /* ********************NavLinks*********************** */
-
+.navbar{
+  z-index: 1;
+}
 nav a.nav-link {
   font-weight: 400;
   font-size: .8rem;
@@ -45,4 +50,63 @@ nav ul li {
 }
 .navbar-nav > li > a:hover{
     border-bottom:3px solid var(--primary-orange);
+}
+/* ***************Header****************** */
+
+.header-wraper{
+  position: relative;
+  background: url(bg.jpg) no-repeat ;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Chivo Mono";
+  z-index: 1;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+.typed-text{
+  font-size: 2.5rem;
+  color: var(--primary-white);
+}
+/* ********************Header-main-button******************* */
+.btn_main{
+  border:1px solid var(--primary-white);
+  text-transform: uppercase;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 10px 12px 12px 12px ;
+  text-decoration: none;
+  margin-top: 2rem;
+  color: var(--primary-white);
+}
+.btn_main:hover{
+  color: var(--primary-btn-dark);
+  background-color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+  font-weight: 600;
+}
+
+#tsparticles{
+  position: absolute;
+  height: 100vh;
+  width: 90vw;
+  z-index: 1;
+  opacity: 0.8;
 }
