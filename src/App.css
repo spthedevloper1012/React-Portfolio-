@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Josefin+Sans&display=swap");
+
+:root {
+  --primary-white: #fff;
+  --primary-orange:#f9ab00;
+  --primary-dark:rgba(255,255,255,0);
+}
+body {
+  font-family: "Chivo Mono", monospace;
+}
+/* *********************Navbar******************** */
+
+.logo {
+  width: 4rem;
+}
+
+/* ********************NavLinks*********************** */
+
+nav a.nav-link {
+  font-weight: 400;
+  font-size: .8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav{
+    padding-left: 5px;
+}
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-bottom:0.1875rem solid var(--primary-dark);
+}
+.navbar-brand{
+    max-width: 17.25rem;
+    padding: 10x !important;
+    height: 4rem !important;
+}
+.navbar-nav > li > a:focus{
+    border-bottom:3px solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover{
+    border-bottom:3px solid var(--primary-orange);
+}
